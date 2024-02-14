@@ -14,14 +14,14 @@ body {
   padding: 0;
 }
 
-header, nav, footer {
+.container {
   background-color: var(--primary-color);
   color: #fff;
   text-align: center;
   padding: 1em 0;
 }
 
-nav a {
+.container a {
   color: #fff;
   text-decoration: none;
   border-radius: 20px;
@@ -30,7 +30,7 @@ nav a {
   transition: background-color 0.3s ease;
 }
 
-nav a:hover {
+.container a:hover, .button:hover {
   background-color: var(--secondary-color);
 }
 
@@ -44,10 +44,6 @@ nav a:hover {
   transition: background-color 0.3s ease;
 }
 
-.button:hover {
-  background-color: var(--secondary-color);
-}
-
 section {
   padding: 2em;
 }
@@ -58,7 +54,7 @@ section {
       grid-template-columns: 1fr minmax(auto, 800px) 1fr;
   }
 
-  header, nav, main, footer {
+  .container {
       grid-column: 2;
   }
 }
